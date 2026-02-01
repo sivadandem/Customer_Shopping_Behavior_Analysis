@@ -4,7 +4,8 @@
 
 ### Pre-Recording Checklist
 
-Before Recording:
+**Before Recording:**
+
 - [ ] Close unnecessary browser tabs
 - [ ] Clear browser history/bookmarks bar (optional)
 - [ ] Open VS Code with project
@@ -91,6 +92,8 @@ Each card shows the item name, category, price, and availability status."
 
 **Action:** Scroll through the menu items
 
+---
+
 #### 3.2 Search with Debouncing
 
 **Screen:** Click on search bar and type slowly
@@ -108,6 +111,8 @@ prevents unnecessary API calls and improves performance."
 
 **Action:** Type "pizza" slowly, pause, show results
 
+---
+
 #### 3.3 Category Filter
 
 **Screen:** Click on category dropdown
@@ -122,6 +127,8 @@ I can also filter by 'Main Course', 'Dessert', or 'Beverage'."
 ```
 
 **Action:** Select different categories
+
+---
 
 #### 3.4 Toggle Availability (Optimistic UI)
 
@@ -139,6 +146,8 @@ the change is reverted and an error message is shown."
 ```
 
 **Action:** Toggle availability on/off
+
+---
 
 #### 3.5 Add New Menu Item
 
@@ -159,6 +168,8 @@ When I submit, the item is added and appears in the list."
 
 **Action:** Fill form and submit
 
+---
+
 #### 3.6 Orders Dashboard
 
 **Screen:** Navigate to Orders page
@@ -176,6 +187,8 @@ Delivered, or Cancelled."
 ```
 
 **Action:** Show orders, click on filters
+
+---
 
 #### 3.7 Update Order Status
 
@@ -205,6 +218,8 @@ The status badge updates immediately."
 I've created a collection with all the API endpoints."
 ```
 
+---
+
 #### 4.1 Health Check
 
 **Screen:** Click on Server Status request
@@ -218,6 +233,8 @@ we get a 200 OK response with status 'OK'."
 ```
 
 **Action:** Send request, show response
+
+---
 
 #### 4.2 Get All Menu Items
 
@@ -233,6 +250,8 @@ price, ingredients, and timestamps."
 ```
 
 **Action:** Send request, scroll through response
+
+---
 
 #### 4.3 Create Menu Item
 
@@ -250,6 +269,8 @@ need to create it manually. MongoDB uses ObjectId which is a
 
 **Action:** Show request body, send request, show response with new _id
 
+---
+
 #### 4.4 Get Orders with Population
 
 **Screen:** Click on GET orders request
@@ -264,6 +285,8 @@ populate method."
 ```
 
 **Action:** Send request, show populated data
+
+---
 
 #### 4.5 Delete Menu Item
 
@@ -284,6 +307,8 @@ We get a success response confirming the deletion."
 
 **Screen:** Open VS Code
 
+---
+
 #### 5.1 Project Structure
 
 **Say:**
@@ -291,21 +316,23 @@ We get a success response confirming the deletion."
 "Let me show you the code structure.
 
 The project is organized into two main folders:
-- 'client' or 'frontend' for the React application
-- 'server' or 'backend' for the Node.js API
+- 'client' for the React application
+- 'server' for the Node.js API
 
 This separation makes the code maintainable and easy to deploy."
 ```
 
-**Action:** Show folder structure in VS Code
+**Action:** Show the folder structure in VS Code's file explorer. Point to the server folder (containing controllers, models, routes) and the client folder (containing src/components, src/pages, src/hooks).
+
+---
 
 #### 5.2 Backend - Schema
 
-**Screen:** Open MenuItem model file
+**Screen:** Open the MenuItem.js model file (e.g., in `server/models/MenuItem.js`)
 
 **Say:**
 ```
-"Here's the MenuItem schema. I've defined fields like name, 
+"Here's the MenuItem schema, located in my models folder. I've defined fields like name, 
 description, category with enum validation, price, and ingredients array.
 
 The timestamps option automatically adds createdAt and updatedAt fields.
@@ -314,15 +341,17 @@ Notice I've also added a text index on name and ingredients
 for efficient search queries."
 ```
 
-**Action:** Scroll through schema code
+**Action:** Scroll through the schema code in MenuItem.js
+
+---
 
 #### 5.3 Backend - Controller
 
-**Screen:** Open menu controller file
+**Screen:** Open the menu controller file (e.g., `server/controllers/menuController.js`)
 
 **Say:**
 ```
-"In the controller, I have functions for each CRUD operation.
+"In the menu controller, I have functions for each CRUD operation.
 
 Here's the getAllMenuItems function - it supports filtering 
 by category, availability, and price range using query parameters.
@@ -331,15 +360,17 @@ Error handling is done with try-catch blocks, returning
 appropriate status codes."
 ```
 
-**Action:** Show controller code
+**Action:** Show the getAllMenuItems function in menuController.js
+
+---
 
 #### 5.4 Frontend - useDebounce Hook
 
-**Screen:** Open useDebounce hook file
+**Screen:** Open your custom useDebounce.js hook file (e.g., in `client/src/hooks/useDebounce.js`)
 
 **Say:**
 ```
-"Here's my custom useDebounce hook.
+"Here's my custom useDebounce hook, which lives in my hooks folder.
 
 It takes a value and delay as parameters. Using useEffect, 
 it sets a timeout to update the debounced value.
@@ -349,23 +380,25 @@ before the delay completes. This is the key to preventing
 unnecessary API calls."
 ```
 
-**Action:** Show hook code
+**Action:** Show the code for the useDebounce hook.
+
+---
 
 #### 5.5 Frontend - Optimistic Update
 
-**Screen:** Open component with toggle functionality
+**Screen:** Open the component with the toggle functionality (e.g., `client/src/components/MenuItemCard.jsx` or `client/src/pages/MenuManagement.jsx`)
 
 **Say:**
 ```
 "For optimistic updates, I store the previous state before 
-making changes.
+making changes inside my Menu Item Card component.
 
-When the user clicks toggle, I update the local state immediately, 
-then make the API call. If it fails, I revert to the previous 
-state and show an error toast."
+When the user clicks the toggle, I update the local state immediately, 
+then make the API call. If the API call fails, I catch the error, 
+revert to the previous state, and show an error toast."
 ```
 
-**Action:** Show relevant code
+**Action:** Show the handler function for the toggle action, highlighting the immediate state update and the catch block.
 
 ---
 
