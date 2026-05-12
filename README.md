@@ -6,7 +6,7 @@ A complete, end-to-end data analytics portfolio project analyzing **3,900 custom
 
 ## 📌 Project Overview
 
-This project simulates a corporate-grade analytics workflow using **Python**, **SQL (PostgreSQL)**, and **Power BI**:
+This project simulates a corporate-grade analytics workflow using **Python**, **SQL (SQLServer)**, and **Power BI**:
 
 ✅ **Data Preparation & EDA (Python)** – Clean, transform, and engineer features from raw transactional data.
 
