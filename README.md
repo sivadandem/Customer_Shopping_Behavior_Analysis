@@ -34,7 +34,7 @@ This project simulates a corporate-grade analytics workflow using **Python**, **
 ## 🛠️ Tech Stack
 
 - **Python** – pandas, SQLAlchemy (EDA + database integration)
-- **PostgreSQL** – Business query analysis
+- **SQL Server** – Business query analysis
 - **Power BI** – Interactive dashboard
 - **Git** – Version control
 
@@ -53,7 +53,7 @@ This project simulates a corporate-grade analytics workflow using **Python**, **
    - Missing value imputation (median by category)
    - Feature engineering: `age_group`, `purchase_frequency_days`
    - Data consistency checks
-   - Load cleaned data into PostgreSQL
+   - Load cleaned data into SQL Server
 
 3. **Run SQL Queries** (`customer_behavior_sql_queries.sql`)
    - Revenue by Gender
@@ -68,7 +68,7 @@ This project simulates a corporate-grade analytics workflow using **Python**, **
    - Revenue by Age Group
 
 4. **Open Power BI Dashboard** (`customer_behavior_dashboard.pbix`)
-   - Connect to your PostgreSQL database
+   - Connect to your SQL Server database
    - Explore KPIs: 3.9K customers, $59.76 avg purchase, 3.75 avg rating
    - Filter by Subscription Status, Gender, Category, Shipping Type
 
@@ -110,7 +110,7 @@ This project simulates a corporate-grade analytics workflow using **Python**, **
 customer-shopping-behavior-analysis/
 │
 ├── Customer_Shopping_Behavior_Analysis.ipynb   # Python EDA + DB integration
-├── customer_behavior_sql_queries.sql           # PostgreSQL business queries
+├── customer_behavior_sql_queries.sql           # SQL Server business queries
 ├── customer_behavior_dashboard.pbix            # Power BI dashboard
 ├── Customer_Shopping_Behavior_Analysis.pdf     # Project report (PDF)
 ├── Customer_Shopping_Behavior_Analysis.docx    # Project report (Word)
