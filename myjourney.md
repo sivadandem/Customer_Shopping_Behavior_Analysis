@@ -1,12 +1,13 @@
 # 👤 Siva Dandem
+**Data Analyst · B.Tech CSE, LPU 2023**
+
+---
 
 ## 🎓 Education
 
-| Field | Details |
-|-------|---------|
-| **Degree** | B.Tech — Computer Science Engineering |
-| **University** | Lovely Professional University (LPU) |
-| **Year** | 2023 |
+| Degree | University | Year |
+|--------|------------|------|
+| B.Tech — Computer Science Engineering | Lovely Professional University (LPU) | 2023 |
 
 ---
 
@@ -14,10 +15,10 @@
 
 | Tool |
 |------|
-| 🐍 **Python** 
-| 🗄️ **SQL**
-| 📊 **Power BI** 
-| 📗 **Excel**
+| 🐍 Python |
+| 🗄️ SQL |
+| 📊 Power BI |
+| 📗 Excel |
 
 ---
 
@@ -25,36 +26,30 @@
 
 > **Goal:** Uncover spending patterns, customer segments, and product preferences to help businesses make smarter decisions.
 
-### Dataset Overview
+### 📊 Dataset
 
-| Attribute | Value |
-|-----------|-------|
-| **Total Transactions** | 3,900 |
-| **Variables** | 18 |
-| **Product Categories** | Clothing, Accessories, Footwear, Outerwear |
+| Metric | Value |
+|--------|-------|
+| Total Transactions | 3,900 |
+| Variables | 18 |
+| Product Categories | Clothing, Accessories, Footwear, Outerwear |
 
 ---
 
 ## 🔄 Project Pipeline
 
-### Step 1 — 🐍 Python & Pandas · *Data Cleaning & Feature Engineering*
+### Step 01 — 🐍 Python & Pandas · *Data Cleaning & Feature Engineering*
 
 - Loaded and inspected the dataset
 - Found and handled **37 missing values** in the `Review Rating` column
 - Imputed using **median rating per product category** *(not global median — more accurate)*
 - Standardized column names for consistency
-- Engineered new features:
-  - `Age Groups`
-  - `Purchase Frequency`
+- Engineered new features: `Age Groups`, `Purchase Frequency`
 - Dropped a redundant column
-
-> 💡 **Why category-level imputation?** 
 
 ---
 
-### Step 2 — 🗄️ SQL Server · *Business Question Queries*
-
-Loaded the clean dataset into SQL Server and wrote queries to answer:
+### Step 02 — 🗄️ SQL Server · *Business Question Queries*
 
 | Business Question | Query Focus |
 |-------------------|-------------|
@@ -63,13 +58,9 @@ Loaded the clean dataset into SQL Server and wrote queries to answer:
 | 🏷️ Subscription impact | Subscriber vs non-subscriber spending |
 | 👥 Customer segmentation | Segment-level spend & behavior patterns |
 
-> **Why SQL?** The data was relational and the queries needed to be precise 
-
 ---
 
-### Step 3 — 📊 Power BI · *Interactive Dashboard*
-
-Built a dashboard to visualize all findings in one place:
+### Step 03 — 📊 Power BI · *Interactive Dashboard*
 
 - ✅ Total Revenue KPI
 - ✅ Customer Segments breakdown
@@ -81,20 +72,21 @@ Built a dashboard to visualize all findings in one place:
 
 ## 🔑 Key Business Insights
 
-### 1. Discounts don't always reduce spend
+### Insight 01 — Discounts don't always reduce spend
 
 > 🛒 **839 customers** who used discounts **still spent above average.**
 
-This challenges the common assumption that discounts erode revenue. **Recommendation:** Use discounts strategically as a loyalty driver, not just a clearance tool.
+Challenges the assumption that discounts erode revenue.  
+**Recommendation:** Use discounts strategically as a loyalty driver, not just a clearance tool.
 
-### 2. Category-aware data quality matters
+---
 
-Imputing missing review ratings at the **category level** rather than globally produced more reliable downstream analysis — a small data decision with a measurable accuracy impact.
+### Insight 02 — Category-aware data quality matters
+
+> Imputing missing review ratings at the **category level** rather than globally produced more reliable downstream analysis — a small data decision with a measurable accuracy impact.
 
 ---
 
 ## 🚀 Goal
 
 Joining **Parentof Solutions** as a **Data Analyst** — excited to contribute by translating data into decisions that drive real business impact.
-
----
