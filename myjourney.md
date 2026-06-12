@@ -12,8 +12,8 @@
 
 ## 💡 Skills
 
-| Tool | Usage |
-|------|-------|
+| Tool |
+|------|
 | 🐍 **Python** 
 | 🗄️ **SQL**
 | 📊 **Power BI** 
