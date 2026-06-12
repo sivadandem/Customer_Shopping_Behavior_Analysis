@@ -87,6 +87,4 @@ Challenges the assumption that discounts erode revenue.
 
 ---
 
-## 🚀 Goal
 
-Joining **Parentof Solutions** as a **Data Analyst** — excited to contribute by translating data into decisions that drive real business impact.
